@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(100, 141, 127);
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    position: relative;
+}
+
+#header {
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    background: rgba(255 255 255 / 50%);
+    border-radius: 5px;
+}
+
+#location-input {
+    height: 30px;
+    width: 250px; /* Ajusta el ancho según sea necesario */
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    outline: none;
+    
+}
+
+#weather-info {
+    font-size: 18px;
+    color: white; /* Cambiado a blanco para mejor contraste */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejor visibilidad */
+    height: 10%;
+    width: 95%;
+    border-radius: 0px 0px 20px 20px; /* Bordes redondeados */
+    margin-left: 10px;
+    
+}
+
+#map {
+    height: 95%;
+    width: 95%;
+    z-index: 1;
+    border-radius: 20px 20px 0px 0px;
+    margin-top: -10px; /* Ajusta el espacio para que el mapa no se superponga con el encabezado */
+    margin-left: 10px;
+}
+
+#weather-icon {
+    width: 30px;
+    margin: 0px;
+    height: 30px;
+    border-color:rgb(0, 0, 0);
+}
+
+
+/*Media*/
+
+@media (min-width: 542px) and (max-width: 768px)   {
+    #location-input {
+    width: 250px;
+    }
+
+    #header{
+        margin-left: 20px;
+    }
+}
+
+
+
+@media (max-width: 540px){
+    #header{
+        margin-top: 40px;
+        margin-left: -9.5px;
+    }
+
+    #location-input{
+        width: 270; 
+    }
+}

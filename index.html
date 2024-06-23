@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugar y Temperatura</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxlO8ILdL4GvaE8wreaAke_-k3Al4V-IM&libraries=places&callback=initMap" async defer></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            
+            <input id="location-input" type="text" placeholder="Entrar a la localización">
+        </div>
+        <div id="map"></div>
+        <div id="weather-info">
+            <span id="temperature">-- °C</span>
+            <img id="weather-icon" src="" alt="clima">
+
+        </div>
+    </div>
+</body>
+</html>
+
